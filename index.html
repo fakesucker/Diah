@@ -7,7 +7,7 @@
 
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-  <title>ASLP-TTS-Demo-Page</title>
+  <title>DialoSpeech: Dual-Speaker Dialogue Generation with LLM and Flow Matching</title>
   <meta name="generator" content="Jekyll v3.9.0">
   <meta property="og:title" content="title">
   <meta property="og:locale" content="en_US">
@@ -41,7 +41,7 @@
 
   <section class="main-content">
     <h1 id="">
-      <center> NPU-ASLP Speech Generation Model: An Single-Codec + LIama Aproach </center>
+      <center> DialoSpeech: Dual-Speaker Dialogue Generation with LLM and Flow Matching </center>
     </h1>
 
     <!-- <h3 id=""> -->
@@ -54,13 +54,22 @@
 
 
     <br><br>
-    <h2 id="abstract">1.模型结构<a name="abstract"></a></h2>
-    <!-- <p>Recent advances in text-to-speech, particularly those based on Graph Neural Networks (GNNs), have significantly improved the expressiveness of short-form synthetic speech. However, generating human-parity long-form speech with high dynamic prosodic variations is still challenging. To address this problem, we expand the capabilities of GNNs with a hierarchical prosody modeling approach, named HiGNN-TTS. Specifically, we add a virtual global node in the graph to strengthen the interconnection of word nodes and introduce a contextual attention mechanism to broaden the prosody modeling scope of GNNs from intra-sentence to inter-sentence. Additionally, we perform hierarchical supervision from acoustic prosody on each node of the graph to capture the prosodic variations with a high dynamic range. Ablation studies show the effectiveness of HiGNN-TTS in learning hierarchical prosody. Both objective and subjective evaluations demonstrate that HiGNN-TTS significantly improves the naturalness and expressiveness of long-form synthetic speech.</p> -->
+    <h2 id="abstract">1.Abstract<a name="abstract"></a></h2>
+    <p>Recent advances in text-to-speech (TTS) synthesis, particularly those leveraging large language models (LLMs), have significantly improved expressiveness and naturalness. However, generating human-like, interactive dialogue speech remains challenging. Current systems face limitations due to the scarcity of dual-track data and difficulties in achieving naturalness, contextual coherence, interactional dynamics such as turn-taking, overlapping speech, and speaker consistency in multi-turn conversations. To address these challenges, we propose \textbf{DialoSpeech}\footnote{Codes and checkpoints will be publicly released.}, a dual-track architecture combining a large language model with Chunked Flow Matching for expressive, human-like dialogue speech synthesis. DialoSpeech generates natural multi-turn conversations with coherent speaker turns and natural overlaps and supports both chinese, english and cross-lingual speech synthesis. We further introduce a data processing pipeline to construct dual-track dialogue datasets, facilitating scalable training and experimental validation. Experiments show that our model outperforms baselines, offering a solution for generating human-like spoken dialogues.</p>
 
 
     <table frame=void rules=none>
       <tr>
-        <center><img src='raw/fig/global.PNG' width="50%"></center>
+        <center><img src='raw/fig/diaspeech_over.png' width="50%"></center>
+      </tr>
+      <tr>
+      </tr>
+    </table>
+    <br><br>
+
+    <table frame=void rules=none>
+      <tr>
+        <center><img src='raw/fig/training.png' width="50%"></center>
       </tr>
       <tr>
       </tr>
@@ -69,13 +78,13 @@
 
 
     <h2>2. Demos <a name="Comparison"></a></h2>
-    <p>ASLP TTS大模型demo页面，包含如下几个部分</p>
+    <!-- <p>ASLP TTS大模型demo页面，包含如下几个部分</p>
     <ul>
         <li><b>1.精品拟人对话语句合成</b></li>
         <li><b>2.精品有声书合成</b></li>
         <li><b>3.情感语句合成</b></li>
         <li><b>4.中英名人音色克隆</b></li>
-    </ul>
+    </ul> -->
     <p style="height: 20px;"></p>
 
     <!-- <p>1.精品拟人对话合成</p>
