@@ -33,37 +33,46 @@
 
 <body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
   <section class="page-header">
-    <!-- 可选的头部信息 -->
+    <!-- <h1 class="project-name">Demo PAGE</h1> -->
+    <!-- <h2 class="project-tagline"></h2> -->
+
+
   </section>
 
   <section class="main-content">
+    <h1 style="text-align:center;">DialoSpeech: Dual-Speaker Dialogue Generation with LLM and Flow Matching</h1>
 
-    <!-- ================= Abstract 分块 ================= -->
-    <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
-      <h2 id="abstract" style="text-align:center; font-size:28px;">Abstract</h2>
-      <p style="font-size:16px; line-height:1.6; text-align:justify;">
-        Recent advances in text-to-speech (TTS) synthesis, particularly those leveraging large language models (LLMs), have significantly improved expressiveness and naturalness. 
-        However, generating human-like, interactive dialogue speech remains challenging. Current systems face limitations due to the scarcity of dual-track data and difficulties in achieving naturalness, contextual coherence, interactional dynamics such as turn-taking, overlapping speech, and speaker consistency in multi-turn conversations. 
-        To address these challenges, we propose <strong>DialoSpeech</strong><sup><a href="#">[1]</a></sup>, a dual-track architecture combining a large language model with Chunked Flow Matching for expressive, human-like dialogue speech synthesis. 
-        DialoSpeech generates natural multi-turn conversations with coherent speaker turns and natural overlaps and supports both Chinese, English, and cross-lingual speech synthesis. We further introduce a data processing pipeline to construct dual-track dialogue datasets, facilitating scalable training and experimental validation. 
-        Experiments show that our model outperforms baselines, offering a solution for generating human-like spoken dialogues.
-      </p>
+    <!-- 作者及会议信息（如需恢复，取消注释即可） -->
+    <!--
+    <h3 style="text-align:center;">A work submitted to ASRU2023</h3>
+    <p style="text-align:center;">Dake Guo<sup>1</sup>, Xinfa Zhu<sup>1</sup>, Liumeng Xue<sup>2</sup>, Tao Li<sup>1</sup>, Yuanjun Lv<sup>1</sup>, Yuepeng Jiang<sup>1</sup>, Lei Xie<sup>1</sup></p>
+    <p style="text-align:center;"><sup>1</sup>Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi'an, China</p>
+    <p style="text-align:center;"><sup>2</sup>School of Data Science, The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen), China</p>
+    -->
 
-      <!-- 图片展示 -->
-      <div style="text-align:center; margin:30px 0;">
-        <img src="raw/fig/diaspeech_over.png" alt="DialoSpeech Overview" style="max-width:50%; height:auto; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-      </div>
+    <h2 id="abstract" style="text-align:center;">Abstract</h2>
+    <p>
+      Recent advances in text-to-speech (TTS) synthesis, particularly those leveraging large language models (LLMs), have significantly improved expressiveness and naturalness. 
+      However, generating human-like, interactive dialogue speech remains challenging. Current systems face limitations due to the scarcity of dual-track data and difficulties in achieving naturalness, contextual coherence, interactional dynamics such as turn-taking, overlapping speech, and speaker consistency in multi-turn conversations. 
+      To address these challenges, we propose <strong>DialoSpeech</strong><sup><a href="#">[1]</a></sup>, a dual-track architecture combining a large language model with Chunked Flow Matching for expressive, human-like dialogue speech synthesis. 
+      DialoSpeech generates natural multi-turn conversations with coherent speaker turns and natural overlaps and supports both Chinese, English, and cross-lingual speech synthesis. We further introduce a data processing pipeline to construct dual-track dialogue datasets, facilitating scalable training and experimental validation. Experiments show that our model outperforms baselines, offering a solution for generating human-like spoken dialogues.
+    </p>
 
-      <div style="text-align:center; margin:20px 0;">
-        <img src="raw/fig/training.png" alt="DialoSpeech Training Pipeline" style="max-width:50%; height:auto; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-      </div>
-
-      <p style="text-align:center; margin-top:10px;">
-        <b>Figure 1</b>: Illustration of DialoSpeech training (bottom) and inference (top).
-      </p>
+    <!-- 图片 1 -->
+    <div style="text-align:center; margin:20px 0;">
+      <img src="raw/fig/diaspeech_over.png" alt="DialoSpeech Overview" style="max-width:50%; height:auto; border-radius:6px;">
     </div>
 
-    <h2 id="Comparison" style="text-align:center;">Demos</h2>
+    <!-- 图片 2 -->
+    <div style="text-align:center; margin:20px 0;">
+      <img src="raw/fig/training.png" alt="DialoSpeech Training Pipeline" style="max-width:50%; height:auto; border-radius:6px;">
+    </div>
+
+    <p style="text-align:center; margin-top:10px;">
+      <b>Figure 1</b>: Illustration of DialoSpeech training (bottom) and inference (top).
+    </p>
+
+    <h2 id="Comparison" style="text-align:center;margin-top:60px;">Demos</h2>
     <p style="height: 20px;"></p>
 
     <!-- <p>1.精品拟人对话合成</p>
