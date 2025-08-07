@@ -57,17 +57,22 @@
 
         <!-- 模型图示部分 -->
         <section id="figures" class="mb-16">
-             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-4 rounded-xl shadow-lg">
-                    <img src="raw/fig/diaspeech_over.png" alt="DialoSpeech Overview" class="w-full h-auto rounded-lg">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <!-- Inference Pipeline -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col h-full">
+                    <h4 class="text-xl font-bold text-center mb-4 text-gray-800">Inference Pipeline</h4>
+                    <div class="flex-grow flex items-center justify-center">
+                        <img src="raw/fig/diaspeech_over.png" alt="DialoSpeech Inference Pipeline" class="w-full h-auto rounded-lg">
+                    </div>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg">
-                    <img src="raw/fig/training.png" alt="DialoSpeech Training Pipeline" class="w-full h-auto rounded-lg">
+                <!-- Training Pipeline -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col h-full">
+                    <h4 class="text-xl font-bold text-center mb-4 text-gray-800">Training Pipeline</h4>
+                    <div class="flex-grow flex items-center justify-center">
+                        <img src="raw/fig/training.png" alt="DialoSpeech Training Pipeline" class="w-full h-auto rounded-lg">
+                    </div>
                 </div>
             </div>
-            <p class="text-center text-gray-600 mt-4">
-                <b>Figure 1</b>: Illustration of DialoSpeech training (bottom) and inference (top).
-            </p>
         </section>
 
         <!-- Demos 总标题 -->
@@ -87,18 +92,18 @@
                     <tbody>
                         <tr class="border-t">
                             <td class="p-4 text-gray-700 leading-relaxed text-sm">
-                                我觉得啊，就是经历了这么多年的经验， 就是补剂的作用就是九分的努力， 十分之一的补剂。 嗯，选的话肯定是九分更重要，但是我觉得补剂它能够让你九分的努力更加的有效率，更加的避免徒劳无功。 嗯，就是你，你你得先得真的锻炼，真的努力，真的健康饮食，然后再考虑补剂， 那你再加十十分之一的补剂的话，他可能就是说啊， 一半是心理作用，<strong class="text-purple-600">[spkchange]</strong> 对，其实很多时候心理作用是非常重要的。嗯，然后我每次用补剂的时候，我就会更加努力，就比如说我在健身之前我喝了一勺蛋白粉，我就会督促自己多练，<strong class="text-purple-600">[spkchange]</strong> 其实心理作用只要能实现你的预期目的就可以了。 就比如说给自行车链条加油， 它其实不是必要的，但是它可以让你骑行更顺畅， 然后提高你骑行的频率。
+                                <strong class="text-purple-600">[s1]</strong>我觉得啊，就是经历了这么多年的经验， 就是补剂的作用就是九分的努力， 十分之一的补剂。 嗯，选的话肯定是九分更重要，但是我觉得补剂它能够让你九分的努力更加的有效率，更加的避免徒劳无功。 嗯，就是你，你你得先得真的锻炼，真的努力，真的健康饮食，然后再考虑补剂， 那你再加十十分之一的补剂的话，他可能就是说啊， 一半是心理作用，<strong class="text-purple-600">[s2]</strong> 对，其实很多时候心理作用是非常重要的。嗯，然后我每次用补剂的时候，我就会更加努力，就比如说我在健身之前我喝了一勺蛋白粉，我就会督促自己多练，<strong class="text-purple-600">[s1]</strong> 其实心理作用只要能实现你的预期目的就可以了。 就比如说给自行车链条加油， 它其实不是必要的，但是它可以让你骑行更顺畅， 然后提高你骑行的频率。
                             </td>
                             <td class="p-4 align-middle">
-                                <audio controls class="w-full"><source src="./raw/samples/diaospeech_zh/adiamoon_spk0.wav" type="audio/wav">您的浏览器不支持音频播放。</audio>
+                                <audio controls class="w-full"><source src="./raw/samples/diaospeech_zh/diamoon_spk0.wav" type="audio/wav">您的浏览器不支持音频播放。</audio>
                             </td>
                         </tr>
                         <tr class="border-t">
                             <td class="p-4 text-gray-700 leading-relaxed text-sm">
-                                <p><strong class="text-blue-600">女：</strong>哎，好久不见，李明听说你研究生是保研到了西北工业大学的 ASLP 实验室是吗？</p>
-                                <p><strong class="text-green-600">男：</strong>嗯，是的，我之前就一直对像音频啊语音合成这些特别感兴趣，刚好实验室也在专注研究这块，就真的，嗯，挺幸运的吧呵呵。</p>
-                                <p><strong class="text-blue-600">女：</strong>哦？那今天能和大家分享一下你们最近在语音合成方面的一些进展吗？感觉大家呃现在对这方面都挺感兴趣呢。</p>
-                                <p><strong class="text-green-600">男：</strong>对，最近我们刚开发出了一个用16万小时中英文数据训练的模型，呃效果怎么说呢，嗯，真的非常不错。</p>
+                                <p><strong class="text-blue-600">A：</strong>哎，好久不见，李明听说你研究生是保研到了西北工业大学的 ASLP 实验室是吗？</p>
+                                <p><strong class="text-green-600">B：</strong>嗯，是的，我之前就一直对像音频啊语音合成这些特别感兴趣，刚好实验室也在专注研究这块，就真的，嗯，挺幸运的吧呵呵。</p>
+                                <p><strong class="text-blue-600">A：</strong>哦？那今天能和大家分享一下你们最近在语音合成方面的一些进展吗？感觉大家呃现在对这方面都挺感兴趣呢。</p>
+                                <p><strong class="text-green-600">B：</strong>对，最近我们刚开发出了一个用16万小时中英文数据训练的模型，呃效果怎么说呢，嗯，真的非常不错。</p>
                             </td>
                             <td class="p-4 align-middle">
                                 <audio controls class="w-full"><source src="./raw/dialog_pr.wav" type="audio/wav">您的浏览器不支持音频播放。</audio>
@@ -111,7 +116,7 @@
 
         <!-- 分区2: DiaSpeech vs. CoVoMix 对比 -->
         <section id="comparison_demo">
-            <h3 class="text-2xl font-bold text-center mb-8">DiaSpeech vs. CoVoMix 对比 (英文)</h3>
+            <h3 class="text-2xl font-bold text-center mb-8">DiaSpeech vs. CoVoMix (En)</h3>
             <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                 <table class="w-full text-left">
                     <thead class="bg-gray-100">
@@ -134,15 +139,14 @@
     <script type="text/javascript">
         // 当文档加载完成后执行
         document.addEventListener('DOMContentLoaded', function() {
-            
             // 数据源: 场景ID和对应的对话文本
             const scenes = [
-                { id: 1, text: "hard choice to make especially when you get peer pressure and then once you start doing it hey look now i’m cool mhm but in reality if you actually had to do that to be cool you’re hanging with the wrong parents anyways right right i think my brother in law and his" },
-                { id: 2, text: "my life was like consumed with the television and it was it was just sad i it that was awful and i remember the i think the day after and like gas prices went up to like three bucks a gallon oh i know everybody was like filling up with gas in the town i live in panicking and mhm really wow" },
-                { id: 3, text: "something around there yeah that’s that’s good i don’t think they’d ever get a divorce no i know" },
-                { id: 4, text: "so i’m not i don’t know what it is i don’t know what the minimum wage is or uh it’s five fifteen now it was like four seventy five something like that my gosh" },
-                { id: 5, text: "which is uh very strange it’s not something i ever thought would happen yeah that’s not good no" },
-                { id: 6, text: "he was in jail for fourteen times and they finally deported him fourteen times yeah his family spent over two hundred thousand dollars keeping him here wow and then finally they said no that’s it he’s out can’t even come back to visit" }
+                { id: 1, text: "[s1]hard choice to make especially when you get peer pressure and then once you start doing it hey look now i’m cool [s2] mhm but in reality if you actually had to do that to be cool you’re hanging with the wrong parents anyways right right i think my brother in law and his" },
+                { id: 2, text: "[s1]my life was like consumed with the television and it was it was just sad i it that was awful [s2] and i remember the i think the day after and like gas prices went up to like three bucks a gallon [s1] oh i know [s2]everybody was like filling up with gas in the town i live in panicking and mhm [s1] really wow" },
+                { id: 3, text: "[s1]something around there yeah that’s that’s good [s2] i don’t think they’d ever get a divorce [s1] no i know" },
+                { id: 4, text: "[s1]so i’m not i don’t know what it is i don’t know what the minimum wage is or [s2] uh it’s five fifteen now it was like four seventy five something like that [s1] my gosh" },
+                { id: 5, text: "[s1]which is uh very strange it’s not something i ever thought would happen [s2] yeah that’s not good [s1] no" },
+                { id: 6, text: "[s1]he was in jail for fourteen times and they finally deported him [s2] fourteen times [s1] yeah his family spent over two hundred thousand dollars keeping him here [s2] wow [s1] and then finally they said no that’s it he’s out can’t even come back to visit" }
             ];
 
             const tbody = document.getElementById('comparison-tbody');
